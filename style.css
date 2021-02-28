@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* sizes */
+/* colors */
+/* spaces */
+body {
+  color: #1b1c1e;
+  letter-spacing: -0.1px;
+}
+
+.box {
+  border-radius: 10px;
+  padding: 1rem;
+  width: 520px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 1rem;
+}
+
+.box img {
+  width: 100%;
+}
+
+.pfc {
+  background-color: #f5c695;
+}
+
+.OneC {
+  background-color: #fbe487;
+}
+
+.Portfolio {
+  background-color: #38a3a5;
+}
+
+.hongdae-project {
+  background-color: #843636;
+}
+
+a,
+li {
+  color: #1b1c1e;
+  text-decoration: none;
+  list-style-type: none;
+  font: 400 15px/1 "Poppins";
+  margin: 0 1rem;
+}
+
+h1 {
+  font: 800 clamp(60px, 5vw, 92px)/1 "Poppins";
+}
+
+h2 {
+  font: 500 30px/1.6 "Poppins";
+}
+
+h3 {
+  font: 400 16px/1.5 "Poppins";
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-light-green {
+  padding: 2rem 0;
+  background-color: #f4fcf5;
+}
+
+.contentWrapper {
+  padding: 6rem 1rem 5rem 1rem;
+  max-width: 540px;
+  width: 540px;
+}
+
+.content {
+  padding: 2rem 0;
+  max-width: 540px;
+}
+
+.projectWrapperWider {
+  padding: 6rem 1rem 5rem 1rem;
+  margin: 0 auto;
+  max-width: 1344px;
+}
+
+.contentWrapperPlaceItemCenter {
+  display: relative;
+  height: 100%;
+}
+
+.contentWrapperPlaceItemCenter img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1rem;
+  position: relative;
+}
+
+.logo img {
+  width: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.active {
+  font: 700 15px/1 "Poppins";
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.pop-up-menu {
+  width: 90%;
+  background-color: #57cc99;
+  border-radius: 10px;
+  position: absolute;
+  padding: 6rem 1rem 5rem 1rem;
+  top: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+}
+
+.pop-up-menu span {
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .pop-up-menu {
+    display: none;
+  }
+}
+
+.pop-up-menu .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+@media (max-width: 900px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+span {
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: block;
+  }
+}
+
+header nav .logo .name {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font: 700 18px/1 "Poppins";
+  margin: 0rem 0.3rem;
+}
+
+.btn {
+  border-radius: 30px;
+  background-color: green;
+  display: inline-block;
+  padding: 18px 32px;
+  background-color: #57cc99;
+  color: white;
+  font: 400 16px/1 "Poppins";
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #38a3a5;
+}
+
+.btnContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.callToAction {
+  border-radius: 30px;
+  padding: 18px 32px;
+  border: 2px solid #57cc99;
+  font: 400 16px/1 "Poppins";
+}
+
+.callToAction:hover {
+  color: white;
+  background-color: #57cc99;
+}
+
+.icon {
+  margin-left: 1rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.workIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0rem 0rem 4rem 0;
+}
+
+.workIcons .icons {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0 2rem;
+  height: 100px;
+}
+
+.workIcons .icons a img {
+  width: 60px;
+}
+
+.workIcons .hongdaeWrap {
+  width: 200px;
+}
+
+.workIcons .icons .hongdae {
+  width: 120px;
+}
+
+.workIcons .icons .oneC {
+  width: 100px;
+}
+
+.flexMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center-text {
+  padding: 6rem 0 0 0;
+  text-align: center;
+}
+
+.center-text h2 {
+  font: 700 50px/1 "Poppins";
+  padding: 20px 0 0 0;
+}
+
+.center-text h4 {
+  font: 700 13px/1 "Poppins";
+  text-transform: uppercase;
+}
+
+.center-text h3 {
+  font: 400 16px/1.5 "Poppins";
+  padding: 20px 0;
+  max-width: 83%;
+  margin: 0 auto;
+}
+
+.fix-height {
+  height: 749px;
+  overflow: hidden;
+}
+
+.arrange-offset {
+  position: relative;
+  text-align: center;
+  padding-bottom: 5rem;
+  max-width: 1080px;
+  margin: 0 auto;
+  height: 642px;
+}
+
+@media (max-width: 900px) {
+  .arrange-offset {
+    overflow: hidden;
+  }
+}
+
+.arrange-offset img {
+  margin: 0rem -4rem;
+}
+
+.arrange-offset .order2 {
+  position: absolute;
+  left: -5rem;
+  z-index: 3;
+  bottom: 0;
+}
+
+.arrange-offset .order3 {
+  position: absolute;
+  left: 53%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+  bottom: 0;
+}
+
+.arrange-offset .order4 {
+  position: absolute;
+  right: -5rem;
+  bottom: 0;
+}
+
+.center {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
