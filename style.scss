@@ -21,6 +21,7 @@ $mobileSize: 500px;
 $blackColor: #1b1c1e;
 $lightGreen: #57cc99;
 $green: #38a3a5;
+$darkGreen: #0f111a;
 $outline: 2px solid #57cc99;
 
 /* spaces */
@@ -30,7 +31,7 @@ $paddingStandard: 1rem;
 $marginSmall: 0 1rem;
 
 $radius: 30px;
-$boxRadius: 10px;
+$boxRadius: 8px;
 
 @mixin mediaQuery {
   @media (max-width: #{$tabletSize}) {
@@ -88,6 +89,7 @@ h6 {
 
 h1 {
   font: $fontHeader;
+  letter-spacing: -2px;
 }
 
 h2 {
@@ -96,6 +98,7 @@ h2 {
 
 h3 {
   font: $content;
+  margin: 2rem 0;
 }
 
 ul {
@@ -109,6 +112,12 @@ body {
 .section-light-green {
   padding: 2rem 0;
   background-color: #f4fcf5;
+}
+
+.section-dark-green {
+  padding: 2rem 0;
+  background-color: $blackColor;
+  color: #fff;
 }
 
 .contentWrapper {
@@ -135,18 +144,17 @@ body {
     width: 100%;
   }
 }
-// .hero-tentacles {
-//   @include mediaQuery() {
-//     display: none;
-//   }
-// }
+.hero-tentacles {
+  @include mediaQuery() {
+    display: none;
+  }
+}
 .container {
   max-width: 1080px;
   margin: 0 auto;
 }
 
 header {
-  padding: $paddingStandard;
   position: relative;
 }
 
@@ -294,27 +302,27 @@ header nav .logo .name {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 .center-text {
-  padding: 6rem 0 0 0;
+  padding: 90px 0 3rem 0;
   text-align: center;
   h2 {
     font: 700 50px/1 "Poppins";
-    padding: 20px 0 0 0;
   }
   h4 {
     font: 700 13px/1 "Poppins";
     text-transform: uppercase;
+    padding: 2rem 0;
   }
   h3 {
-    font: 400 16px/1.5 "Poppins";
-    padding: 20px 0;
+    padding: 2rem 0;
     max-width: 83%;
     margin: 0 auto;
   }
 }
 .fix-height {
-  height: 749px;
+  height: 849px;
   overflow: hidden;
 }
 .arrange-offset {
@@ -332,21 +340,33 @@ header nav .logo .name {
   }
   .order2 {
     position: absolute;
-    left: -5rem;
+    left: -4rem;
     z-index: 3;
     bottom: 0;
+    @include mediaQuery() {
+      bottom: -2rem;
+      left: -5rem;
+    }
   }
   .order3 {
     position: absolute;
-    left: 53%;
-    transform: translateX(-50%);
+    left: 27%;
     z-index: 2;
     bottom: 0;
+    @include mediaQuery() {
+      bottom: 1rem;
+      left: 17%;
+    }
   }
   .order4 {
     position: absolute;
     right: -5rem;
-    bottom: 0;
+    bottom: 0rem;
+
+    @include mediaQuery() {
+      bottom: 8rem;
+      right: -12rem;
+    }
   }
 }
 .center {
@@ -356,4 +376,5 @@ header nav .logo .name {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  padding: $paddingStandard;
 }

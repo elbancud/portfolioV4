@@ -14,7 +14,7 @@ body {
 }
 
 .box {
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 1rem;
   width: 520px;
   display: -ms-grid;
@@ -54,6 +54,7 @@ li {
 
 h1 {
   font: 800 clamp(60px, 5vw, 92px)/1 "Poppins";
+  letter-spacing: -2px;
 }
 
 h2 {
@@ -62,6 +63,7 @@ h2 {
 
 h3 {
   font: 400 16px/1.5 "Poppins";
+  margin: 2rem 0;
 }
 
 ul {
@@ -76,6 +78,12 @@ ul {
 .section-light-green {
   padding: 2rem 0;
   background-color: #f4fcf5;
+}
+
+.section-dark-green {
+  padding: 2rem 0;
+  background-color: #1b1c1e;
+  color: #fff;
 }
 
 .contentWrapper {
@@ -104,13 +112,18 @@ ul {
   width: 100%;
 }
 
+@media (max-width: 900px) {
+  .hero-tentacles {
+    display: none;
+  }
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
 }
 
 header {
-  padding: 1rem;
   position: relative;
 }
 
@@ -148,7 +161,7 @@ header nav {
 .pop-up-menu {
   width: 90%;
   background-color: #57cc99;
-  border-radius: 10px;
+  border-radius: 8px;
   position: absolute;
   padding: 6rem 1rem 5rem 1rem;
   top: 1rem;
@@ -304,32 +317,32 @@ header nav .logo .name {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .center-text {
-  padding: 6rem 0 0 0;
+  padding: 90px 0 3rem 0;
   text-align: center;
 }
 
 .center-text h2 {
   font: 700 50px/1 "Poppins";
-  padding: 20px 0 0 0;
 }
 
 .center-text h4 {
   font: 700 13px/1 "Poppins";
   text-transform: uppercase;
+  padding: 2rem 0;
 }
 
 .center-text h3 {
-  font: 400 16px/1.5 "Poppins";
-  padding: 20px 0;
+  padding: 2rem 0;
   max-width: 83%;
   margin: 0 auto;
 }
 
 .fix-height {
-  height: 749px;
+  height: 849px;
   overflow: hidden;
 }
 
@@ -354,24 +367,43 @@ header nav .logo .name {
 
 .arrange-offset .order2 {
   position: absolute;
-  left: -5rem;
+  left: -4rem;
   z-index: 3;
   bottom: 0;
 }
 
+@media (max-width: 900px) {
+  .arrange-offset .order2 {
+    bottom: -2rem;
+    left: -5rem;
+  }
+}
+
 .arrange-offset .order3 {
   position: absolute;
-  left: 53%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 27%;
   z-index: 2;
   bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .arrange-offset .order3 {
+    bottom: 1rem;
+    left: 17%;
+  }
 }
 
 .arrange-offset .order4 {
   position: absolute;
   right: -5rem;
-  bottom: 0;
+  bottom: 0rem;
+}
+
+@media (max-width: 900px) {
+  .arrange-offset .order4 {
+    bottom: 8rem;
+    right: -12rem;
+  }
 }
 
 .center {
@@ -386,5 +418,6 @@ header nav .logo .name {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
